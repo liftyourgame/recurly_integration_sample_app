@@ -18,7 +18,7 @@ public class InsertSampleData implements ApplicationListener {
 
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
-        // delay init until context is ready so we can put stuff in the db
+        // Delay init until context is ready so we can put stuff in the db
         if (event instanceof ContextRefreshedEvent) {
             init();
         }

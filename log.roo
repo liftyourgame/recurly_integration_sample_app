@@ -12,3 +12,5 @@ web mvc scaffold --class ~.web.CustomerController --backingType ~.domain.Custome
 controller class --class ~.web.SignUpController
 controller class --class ~.web.PaymentController
 controller class --class ~.web.AccountController
+controller class --class ~.web.RecurlyJSController --preferredMapping /recurly/js/
+controller class --class ~.web.AccountController --preferredMapping /recurly/accounts/

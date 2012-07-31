@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@RequestMapping("/account/**")
+@RequestMapping("/recurly/accounts/**")
 @Controller
 public class AccountController {
 
@@ -18,6 +18,6 @@ public class AccountController {
 
     @RequestMapping
     public String index() {
-        return "account/index";
+        return "recurly/accounts/index";
     }
 }
