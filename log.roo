@@ -1,0 +1,14 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-07-31 20:35:55
+download status
+download accept terms of use
+project --topLevelPackage za.co.trf.recurly.sample --projectName recurly-integration-sample-app
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY --databaseName recurly
+hint
+entity jpa --class za.co.trf.recurly.sample.domain.Customer --table customer
+field string --fieldName name --column name --permitReservedWords --notNull
+web mvc setup
+hint
+web mvc scaffold --class ~.web.CustomerController --backingType ~.domain.Customer
+controller class --class ~.web.SignUpController
+controller class --class ~.web.PaymentController
+controller class --class ~.web.AccountController
