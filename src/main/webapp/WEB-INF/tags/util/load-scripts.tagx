@@ -12,10 +12,12 @@
     <spring:url value="/resources/images/favicon.ico" var="favicon"/>
 
     <spring:url value="/resources/styles/recurly.js" var="recurly_js" />
+    <spring:url value="/resources/styles/recurly.css" var="recurly_css" />
     <spring:url value="http://code.jquery.com/jquery-1.7.2.js" var="jquery_url"/>
 
     <link rel="stylesheet" type="text/css" href="${tundra_url}"/>
     <link rel="stylesheet" type="text/css" media="screen" href="${roo_css_url}"/>
+    <link rel="stylesheet" href="${recurly_css}"><!-- required for FF3 and Opera --></link>
     <link rel="SHORTCUT ICON" href="${favicon}"/>
 
     <!-- Get the user local from the page context (it was set by Spring MVC's locale resolver) -->
