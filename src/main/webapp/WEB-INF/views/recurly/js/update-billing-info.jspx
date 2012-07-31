@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
-  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-  <jsp:output omit-xml-declaration="yes"/>
-  <spring:message code="label_recurly_js_index" htmlEscape="false" var="title"/>
-  <util:panel id="title" title="${title}">
-    <h3>Update Billing Info</h3>
-  </util:panel>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags"
+     xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <spring:message code="label_recurly_js_index" htmlEscape="false" var="title"/>
+
+    <script>
+        Recurly.config({
+            subdomain: 'recurlyjsdemo-test',
+            currency: 'GBP',
+            country: 'GB',
+            VATPercent: 10
+        });
+
+        Recurly.buildBillingInfoUpdateForm({
+            target: '#recurly-update-billing-info',
+            // Signature must be generated server-side with a utility method provided
+            // in client libraries.
+            signature: 'needs-server-support-code',
+            successURL: 'confirmation.html',
+            accountCode: 'testaccount',
+            distinguishContactFromBillingInfo: false
+        });
+    </script>
+
+    <h1>Update Billing Info</h1>
+
+    <h2>Account Code: testaccount</h2>
+
+    <div id="recurly-update-billing-info"><!-- --></div>
+
 </div>

@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
-  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-  <jsp:output omit-xml-declaration="yes"/>
-  <spring:message code="label_recurly_js_index" htmlEscape="false" var="title"/>
-  <util:panel id="title" title="${title}">
-    <h3>One Time Transaction</h3>
-  </util:panel>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags"
+     xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+
+    <script>
+        Recurly.config({
+            subdomain: 'recurlyjsdemo-test',
+            currency: 'USD',
+            country: 'US'
+        });
+
+        Recurly.buildTransactionForm({
+            target: '#recurly-transaction',
+            // Signature must be generated server-side with a utility method provided in client libraries.
+            signature: 'needs-server-support-code',
+            successURL: 'confirmation.html',
+            account: {
+                firstName: 'Joe',
+                lastName: 'User',
+                email: 'test@example.net',
+                phone: '555-555-5555',
+                companyName: 'Acme'
+            },
+            billingInfo: {
+                firstName: 'Joe',
+                lastName: 'User',
+                address1: '123 somestreet',
+                address2: '45',
+                city: 'San Francisco',
+                zip: '94107',
+                state: 'CA',
+                country: 'US',
+                cardNumber: '4111-1111-1111-1111',
+                CVV: '123'
+            }
+        });
+    </script>
+
+    <h1>One-time Transaction</h1>
+
+    <h2>Dollar Amount: $50</h2>
+
+    <div id="recurly-transaction"><!-- --></div>
+
 </div>
