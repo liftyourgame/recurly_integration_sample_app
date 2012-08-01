@@ -67,4 +67,11 @@
         <property name="persistenceUnitName" value="persistenceUnit"/>
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
+    <!-- Recurly Integration Beans -->
+    <bean id="recurlyJS" class="za.co.trf.recurly.js.RecurlyJS">
+        <!-- Private Key -->
+        <constructor-arg value="a7e8ccc62d1d4127bcfd822a33496943"/>
+    </bean>
+
 </beans>
