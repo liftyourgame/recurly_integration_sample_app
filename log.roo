@@ -14,3 +14,5 @@ controller class --class ~.web.PaymentController
 controller class --class ~.web.AccountController
 controller class --class ~.web.RecurlyJSController --preferredMapping /recurly/js/
 controller class --class ~.web.AccountController --preferredMapping /recurly/accounts/
+logging setup --level WARN
+logging setup --level WARN
