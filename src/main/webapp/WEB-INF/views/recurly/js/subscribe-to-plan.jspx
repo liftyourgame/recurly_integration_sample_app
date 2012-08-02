@@ -4,6 +4,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
 
+    
+
     <script>
         Recurly.config({
             subdomain: 'recurlyjsdemo-test',
@@ -12,9 +14,8 @@
 
         Recurly.buildSubscriptionForm({
             target: '#recurly-subscribe',
-            // Signature must be generated server-side with a utility method provided
-            // in client libraries.
-            signature: 'needs-server-support-code',
+            // Signature must be generated server-side with utility method provided in client library
+            signature: '${signature}',
             successURL: 'confirmation.html',
             planCode: 'simpleplan',
             distinguishContactFromBillingInfo: true,

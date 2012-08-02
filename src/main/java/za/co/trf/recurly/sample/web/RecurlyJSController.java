@@ -1,6 +1,7 @@
 package za.co.trf.recurly.sample.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/recurly/js/**")
@@ -13,7 +14,8 @@ public class RecurlyJSController {
     }
 
     @RequestMapping("subscribe-to-plan")
-    public String subscribeToPlan() {
+    public String subscribeToPlan(Model model) {
+        model.addAttribute("signature", "needs-server-support-code");
         return "recurly/js/subscribe-to-plan";
     }
 
