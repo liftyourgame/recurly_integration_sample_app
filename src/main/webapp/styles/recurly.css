@@ -3,6 +3,11 @@
   position: relative;
   width: 500px;
 }
+
+.recurly.subscribe, .recurly.update_billing_info {
+    background-color: #F1F0FF;
+}
+
 .recurly .cost,
 .recurly .discount {
   font-size: 16px;
@@ -362,8 +367,8 @@
   float: left;
   clear: left;
   width: 300px;
-  height: 34px;
-  margin-bottom: 20px;
+  height: 15px;
+  margin-bottom: 12px;
   position: relative;
 }
 .recurly .field input[type=text] {
@@ -388,13 +393,12 @@
   right: 0;
   bottom: 0;
   padding-left: 9px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
-  line-height: 34px;
+  line-height: 24px;
   vertical-align: middle;
   color: #999;
   cursor: text;
-  overflow: hidden;
   white-space: nowrap;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -564,10 +568,10 @@
   background: #fff;
   border: 1px solid #a0a0a5;
   box-shadow: inset 0 2px 3px rgba(0,0,0,0.10);
-  font-size: 16px;
+  font-size: 12px;
   font-family: inherit;
   padding: 5px;
-  height: 22px;
+  height: 10px;
 }
 .recurly input[type=text][disabled] {
   background: #eee;
@@ -639,6 +643,7 @@
 }
 .recurly button.submit:hover {
   color: #451;
+  cursor: pointer;
 }
 .recurly button.submit:active {
   top: 2px;
