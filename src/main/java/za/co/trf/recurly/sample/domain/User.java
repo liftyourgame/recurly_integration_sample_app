@@ -8,8 +8,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord(table = "customer")
-public class Customer {
+@RooJpaActiveRecord(table = "user")
+public class User {
 
     @NotNull
     @Column(name = "name")
@@ -18,10 +18,10 @@ public class Customer {
     @Column(name = "account_code")
     private String accountCode;
 
-    public Customer() {
+    public User() {
     }
 
-    public Customer(String name) {
+    public User(String name) {
         this.name = name;
     }
 

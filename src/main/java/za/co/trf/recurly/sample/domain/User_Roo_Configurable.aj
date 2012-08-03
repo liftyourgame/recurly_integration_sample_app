@@ -4,10 +4,10 @@
 package za.co.trf.recurly.sample.domain;
 
 import org.springframework.beans.factory.annotation.Configurable;
-import za.co.trf.recurly.sample.domain.Customer;
+import za.co.trf.recurly.sample.domain.User;
 
-privileged aspect Customer_Roo_Configurable {
+privileged aspect User_Roo_Configurable {
     
-    declare @type: Customer: @Configurable;
+    declare @type: User: @Configurable;
     
 }

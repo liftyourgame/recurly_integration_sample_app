@@ -5,7 +5,7 @@ Recurly JS Client Library
 -------------------------
 
 Recurly.js is a Javascript library which allows you to easily embed and customize PCI compliant forms within
-your website. HMAC digital signatures are used to verify information sent to Recurly via your customer's browser.
+your website. HMAC digital signatures are used to verify information sent to Recurly via your user's browser.
 The signature validates that parameters you have specified in your HTML have not been tampered with before
 being received by Recurly. The [Recurly JS Client Library](https://github.com/tfoxcroft/recurly_integration)
 consists of helper methods to create and verify signatures.

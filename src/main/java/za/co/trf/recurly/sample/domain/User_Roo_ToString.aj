@@ -5,11 +5,11 @@ package za.co.trf.recurly.sample.domain;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import za.co.trf.recurly.sample.domain.Customer;
+import za.co.trf.recurly.sample.domain.User;
 
-privileged aspect Customer_Roo_ToString {
+privileged aspect User_Roo_ToString {
     
-    public String Customer.toString() {
+    public String User.toString() {
         return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
     

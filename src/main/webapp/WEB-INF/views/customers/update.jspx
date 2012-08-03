@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_za_co_trf_recurly_sample_domain_Customer" modelAttribute="customer" path="/customers" versionField="Version" z="VZfQFr01nfkpzYA5olVrlSIrko4=">
-        <field:input field="name" id="c_za_co_trf_recurly_sample_domain_Customer_name" required="true" z="w1MGulLFtlLm1kO33L60nQHqAFw="/>
-        <field:input field="accountCode" id="c_za_co_trf_recurly_sample_domain_Customer_accountCode" z="8/OQ7+384V5/F+WpXq1WqRuSQh4="/>
-    </form:update>
-</div>

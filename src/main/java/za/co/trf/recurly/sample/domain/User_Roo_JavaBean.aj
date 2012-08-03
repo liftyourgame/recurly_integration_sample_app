@@ -3,23 +3,23 @@
 
 package za.co.trf.recurly.sample.domain;
 
-import za.co.trf.recurly.sample.domain.Customer;
+import za.co.trf.recurly.sample.domain.User;
 
-privileged aspect Customer_Roo_JavaBean {
+privileged aspect User_Roo_JavaBean {
     
-    public String Customer.getName() {
+    public String User.getName() {
         return this.name;
     }
     
-    public void Customer.setName(String name) {
+    public void User.setName(String name) {
         this.name = name;
     }
     
-    public String Customer.getAccountCode() {
+    public String User.getAccountCode() {
         return this.accountCode;
     }
     
-    public void Customer.setAccountCode(String accountCode) {
+    public void User.setAccountCode(String accountCode) {
         this.accountCode = accountCode;
     }
     

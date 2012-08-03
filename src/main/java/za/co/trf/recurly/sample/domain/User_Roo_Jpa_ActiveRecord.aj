@@ -7,69 +7,69 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.springframework.transaction.annotation.Transactional;
-import za.co.trf.recurly.sample.domain.Customer;
+import za.co.trf.recurly.sample.domain.User;
 
-privileged aspect Customer_Roo_Jpa_ActiveRecord {
+privileged aspect User_Roo_Jpa_ActiveRecord {
     
     @PersistenceContext
-    transient EntityManager Customer.entityManager;
+    transient EntityManager User.entityManager;
     
-    public static final EntityManager Customer.entityManager() {
-        EntityManager em = new Customer().entityManager;
+    public static final EntityManager User.entityManager() {
+        EntityManager em = new User().entityManager;
         if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
         return em;
     }
     
-    public static long Customer.countCustomers() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM Customer o", Long.class).getSingleResult();
+    public static long User.countUsers() {
+        return entityManager().createQuery("SELECT COUNT(o) FROM User o", Long.class).getSingleResult();
     }
     
-    public static List<Customer> Customer.findAllCustomers() {
-        return entityManager().createQuery("SELECT o FROM Customer o", Customer.class).getResultList();
+    public static List<User> User.findAllUsers() {
+        return entityManager().createQuery("SELECT o FROM User o", User.class).getResultList();
     }
     
-    public static Customer Customer.findCustomer(Long id) {
+    public static User User.findUser(Long id) {
         if (id == null) return null;
-        return entityManager().find(Customer.class, id);
+        return entityManager().find(User.class, id);
     }
     
-    public static List<Customer> Customer.findCustomerEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM Customer o", Customer.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+    public static List<User> User.findUserEntries(int firstResult, int maxResults) {
+        return entityManager().createQuery("SELECT o FROM User o", User.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
     @Transactional
-    public void Customer.persist() {
+    public void User.persist() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.persist(this);
     }
     
     @Transactional
-    public void Customer.remove() {
+    public void User.remove() {
         if (this.entityManager == null) this.entityManager = entityManager();
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            Customer attached = Customer.findCustomer(this.id);
+            User attached = User.findUser(this.id);
             this.entityManager.remove(attached);
         }
     }
     
     @Transactional
-    public void Customer.flush() {
+    public void User.flush() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.flush();
     }
     
     @Transactional
-    public void Customer.clear() {
+    public void User.clear() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.clear();
     }
     
     @Transactional
-    public Customer Customer.merge() {
+    public User User.merge() {
         if (this.entityManager == null) this.entityManager = entityManager();
-        Customer merged = this.entityManager.merge(this);
+        User merged = this.entityManager.merge(this);
         this.entityManager.flush();
         return merged;
     }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_za_co_trf_recurly_sample_domain_User" object="${user}" path="/users" z="PSsG0hs5vtkPGIDNmqQFMNmPw/8=">
+        <field:display field="name" id="s_za_co_trf_recurly_sample_domain_User_name" object="${user}" z="1krlKeOXho6aET6ecVcG4qJHkZ8="/>
+        <field:display field="accountCode" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${user}" z="VkIPzJQjm/kel6EkQ5F/na+f3Ck="/>
+    </page:show>
+</div>

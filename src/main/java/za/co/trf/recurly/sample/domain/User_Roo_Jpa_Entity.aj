@@ -10,36 +10,36 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Version;
-import za.co.trf.recurly.sample.domain.Customer;
+import za.co.trf.recurly.sample.domain.User;
 
-privileged aspect Customer_Roo_Jpa_Entity {
+privileged aspect User_Roo_Jpa_Entity {
     
-    declare @type: Customer: @Entity;
+    declare @type: User: @Entity;
     
-    declare @type: Customer: @Table(name = "customer");
+    declare @type: User: @Table(name = "user");
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Long Customer.id;
+    private Long User.id;
     
     @Version
     @Column(name = "version")
-    private Integer Customer.version;
+    private Integer User.version;
     
-    public Long Customer.getId() {
+    public Long User.getId() {
         return this.id;
     }
     
-    public void Customer.setId(Long id) {
+    public void User.setId(Long id) {
         this.id = id;
     }
     
-    public Integer Customer.getVersion() {
+    public Integer User.getVersion() {
         return this.version;
     }
     
-    public void Customer.setVersion(Integer version) {
+    public void User.setVersion(Integer version) {
         this.version = version;
     }
     
