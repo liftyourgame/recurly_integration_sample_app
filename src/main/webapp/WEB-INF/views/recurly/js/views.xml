@@ -18,4 +18,8 @@
         <put-attribute name="body" value="/WEB-INF/views/recurly/js/one-time-transaction.jspx"/>
     </definition>
 
+    <definition extends="default" name="recurly/js/terms-and-conditions">
+        <put-attribute name="body" value="/WEB-INF/views/recurly/js/terms-and-conditions.jspx"/>
+    </definition>
+
 </tiles-definitions>

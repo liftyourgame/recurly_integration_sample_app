@@ -14,7 +14,7 @@
         Recurly.buildTransactionForm({
             target: '#recurly-transaction',
             // Signature must be generated server-side with a utility method provided in client libraries.
-            signature: 'needs-server-support-code',
+            signature: '${signature}',
             successURL: 'confirmation.html',
             account: {
                 firstName: 'Joe',

@@ -4,7 +4,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
 
-    
+    <spring:url var="termsAndConditionsUrl" value="terms-and-conditions"/>
 
     <script>
         Recurly.config({
@@ -18,9 +18,9 @@
             signature: '${signature}',
             successURL: 'confirmation.html',
             planCode: 'simpleplan',
-            distinguishContactFromBillingInfo: true,
-            collectCompany: true,
-            termsOfServiceURL: 'http://example.com/tos',
+            distinguishContactFromBillingInfo: false,
+            collectCompany: false,
+            termsOfServiceURL: '${termsAndConditionsUrl}',
             account: {
                 firstName: 'Joe',
                 lastName: 'User',

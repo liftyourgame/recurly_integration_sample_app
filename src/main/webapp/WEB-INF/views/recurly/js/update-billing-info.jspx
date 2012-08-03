@@ -17,7 +17,7 @@
             target: '#recurly-update-billing-info',
             // Signature must be generated server-side with a utility method provided
             // in client libraries.
-            signature: 'needs-server-support-code',
+            signature: '${signature}',
             successURL: 'confirmation.html',
             accountCode: 'testaccount',
             distinguishContactFromBillingInfo: false
