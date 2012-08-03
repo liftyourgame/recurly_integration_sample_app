@@ -12,8 +12,13 @@ body {
 }
 
 #header {
-	margin-bottom: 1em;
-    text-align: center;
+	text-align: center;
+}
+
+#header .title {
+    font-size: 4.25em;
+    font-family: Constantina,Georgia,'Nimbus Roman No9 L',serif;
+    text-decoration: none
 }
 
 #header-menu {
@@ -41,31 +46,11 @@ body {
 	overflow:hidden;
 	display:box;
 }
-
-#menu {
-	background: #eee;
-	position:relative;
-	float:left;  	
-	left:0px;
-	width:220px;
-	margin-right:15px;
-}
-
-#menu ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#menu ul li{
-	padding: 0px;
-}
-
-
-#menu a, #menu h2 {
+    
+#menu h2 {
 	display: block;
 	margin: 0;
-	padding: 2px 6px;
+	padding: 5px 10px;
 	color:#FFFFFF;
 }
 
@@ -73,26 +58,87 @@ body {
 	color: #fff;
 	background: #63117F;
 	text-transform: uppercase;
-	font-weight:bold;
+	font-weight: bold;
 	font-size: 12px;
+    cursor: pointer;
 }
 
-#menu a {
-	color: #666666;
+#menu {
+    border-top: 1px solid #EAEBEC;
+    border-bottom: 1px solid #EAEBEC;
+    padding: 5px;
+	height: 30px;
+    list-style:none;
+	font-weight:bold;
+	margin-bottom:25px;
+	/* Clear floats */
+	width:100%;
+	/* Bring the nav above everything else--uncomment if needed.
+	position:relative;
+	z-index:5;
+	*/
+}
+
+#menu li {
+	float:left;
+	margin-right:10px;
+	position:relative;
+}
+
+#menu a{
+	display:block;
+	text-decoration:none;
+    color: #666666;
 	background: #efefef;
 	text-decoration: none;
 	padding: 2px 12px;
+
+}
+#menu a:hover{
+	color: #fff;
+	text-decoration:underline;
 }
 
-#menu a:hover {
+/*--- DROPDOWN ---*/
+#menu ul{
+	list-style:none;
+	position:absolute;
+    margin: 0;
+	padding: 0;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    border: 2px solid #666;
+}
+#menu ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+#menu ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#menu li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+    background: white;
+}
+#menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background: white;
+	text-decoration:underline;
+    border-top: 1px solid #EAEBEC;
+    border-bottom: none;
+    color: #333;
+    padding: 3px 10px;
+}
+#menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
 	color: #63117F;
-	background: #fff;
+    border-bottom: 1px solid #63117F;
 }
 
 #footer {
 	background:#fff;
 	border:none;
-	margin-top:15px;
+	margin-top:30px;
 	border-top:1px solid #999999;
 }
 
@@ -111,14 +157,14 @@ body {
 }
 
 table.navigation {
-	border: 0px;
+	border: 0;
 }
 
 label {
 	width:100px;
 	float:left;
 	margin-left: 5px;
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 input {
@@ -242,7 +288,7 @@ table {
 
 table table {
 	margin: -5px 0;
-	border: 0px solid #e0e7d3;
+	border: 0 solid #e0e7d3;
 	width: 100%;
 }
 
@@ -254,7 +300,7 @@ table td,table th {
 table td form {
 	text-align:center;
 	vertical-align: middle;
-	margin: 0px;
+	margin: 0;
 }
 
 table th {

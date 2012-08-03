@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu-warpper"
+     version="2.0" xmlns:security="http://www.springframework.org/security/tags">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+    <menu:menu id="menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__recurly_jsindex_id" messageCode="global_generic" url="/recurly/js/index"
                        z="a5PbtL7FF5geC21E42ua+RE4PdU="/>
@@ -10,11 +12,13 @@
                        url="/recurly/accounts/index" z="r8REHgunVzNM4vtILWvNRrKU+YE="/>
         </menu:category>
 
-        <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
-            <menu:item id="i_user_new" messageCode="global_menu_new" url="/users?form" z="user-managed"/>
-            <menu:item id="i_user_list" messageCode="global_menu_list"
-                       url="/users?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
-        </menu:category>
+        <security:authorize access="hasRole('ADMIN')">
+            <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
+                <menu:item id="i_user_new" messageCode="global_menu_new" url="/users?form" z="user-managed"/>
+                <menu:item id="i_user_list" messageCode="global_menu_list"
+                           url="/users?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+            </menu:category>
+        </security:authorize>
 
     </menu:menu>
 </div>

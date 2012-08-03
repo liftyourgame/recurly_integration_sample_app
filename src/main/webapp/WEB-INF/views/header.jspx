@@ -8,14 +8,8 @@
     <spring:message code="button_home" var="home_label" htmlEscape="false"/>
     <spring:message code="application_name" var="application_name" htmlEscape="false"/>
 
-    <a href="${home}"
-       style="font-size: 5em;
-     font-family: Constantina,Georgia,'Nimbus Roman No9 L',serif;
-     text-decoration: none">
-
-        <span class="logo"><!-- --></span>
+    <a href="${home}" class="title  ">
         ${application_name}
-
     </a>
 
     <div id="header-menu">

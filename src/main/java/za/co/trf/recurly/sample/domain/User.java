@@ -38,7 +38,7 @@ public class User implements UserDetails, CredentialsContainer {
     private String accountCode;
 
     @NotNull
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private UserRole role;
 
     public User() {
