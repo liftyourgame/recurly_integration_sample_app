@@ -5,5 +5,8 @@
     <form:update id="fu_za_co_trf_recurly_sample_domain_User" modelAttribute="user" path="/users" versionField="Version" z="jOoqej4Ob+XTldBT3gSaTMrcjy4=">
         <field:input field="name" id="c_za_co_trf_recurly_sample_domain_User_name" required="true" z="mks3g0uXydGZkiOI1r7wXyE+J1M="/>
         <field:input field="accountCode" id="c_za_co_trf_recurly_sample_domain_User_accountCode" z="x/3eADcnxMj4laVQgnqlU20XULc="/>
+        <field:select field="role" id="c_za_co_trf_recurly_sample_domain_User_role" items="${userroles}" path="userroles" required="true" z="kzYIyVhSYDS9AtkVyaNLQ8ZIqCY="/>
+        <field:input field="password" id="c_za_co_trf_recurly_sample_domain_User_password" z="7yq/yqlRwiId8O8dcYtsViXHHT8="/>
+        <field:input field="email" id="c_za_co_trf_recurly_sample_domain_User_email" required="true" validationMessageCode="field_invalid_email" z="3z30YljfHbuq+q/XhZ/ffWfdths="/>
     </form:update>
 </div>

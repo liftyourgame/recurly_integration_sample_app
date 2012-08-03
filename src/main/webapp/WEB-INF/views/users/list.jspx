@@ -6,6 +6,9 @@
         <table:table data="${users}" id="l_za_co_trf_recurly_sample_domain_User" path="/users" z="5onR3e0Ayzrz/KnQu+Zrmuhd0aM=">
             <table:column id="c_za_co_trf_recurly_sample_domain_User_name" property="name" z="hOBaXXv8Cfwu9zUOXmjbmBkS/KI="/>
             <table:column id="c_za_co_trf_recurly_sample_domain_User_accountCode" property="accountCode" z="wLxNSekab5ZGZbcgceH4kfsEJ9c="/>
+            <table:column id="c_za_co_trf_recurly_sample_domain_User_role" property="role" z="cy+kUxY02VX40BndDYIQoAHoCpc="/>
+            <table:column id="c_za_co_trf_recurly_sample_domain_User_password" property="password" z="Za74yOHvnVhdx4D/TDuvbBsk9VE="/>
+            <table:column id="c_za_co_trf_recurly_sample_domain_User_email" property="email" z="CVbM8/rtlZG6QVRALDXqSFOsEoY="/>
         </table:table>
     </page:list>
 </div>

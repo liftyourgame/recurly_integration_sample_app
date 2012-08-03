@@ -4,6 +4,7 @@
 package za.co.trf.recurly.sample.web;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 import za.co.trf.recurly.sample.domain.User;
+import za.co.trf.recurly.sample.domain.UserRole;
 import za.co.trf.recurly.sample.web.UserController;
 
 privileged aspect UserController_Roo_Controller {
@@ -86,6 +88,7 @@ privileged aspect UserController_Roo_Controller {
     
     void UserController.populateEditForm(Model uiModel, User user) {
         uiModel.addAttribute("user", user);
+        uiModel.addAttribute("userroles", Arrays.asList(UserRole.values()));
     }
     
     String UserController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

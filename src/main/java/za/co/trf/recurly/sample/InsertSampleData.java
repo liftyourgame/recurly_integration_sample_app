@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import za.co.trf.recurly.sample.domain.User;
+import za.co.trf.recurly.sample.domain.UserRole;
 
 /**
  * Provides sample data.
@@ -15,6 +16,8 @@ import za.co.trf.recurly.sample.domain.User;
 @Component
 @Configurable
 public class InsertSampleData implements ApplicationListener {
+
+    private final String PASSWORD = "5f4dcc3b5aa765d61d8327deb882cf99"; 
 
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
@@ -31,12 +34,15 @@ public class InsertSampleData implements ApplicationListener {
             return;
         }
 
-        // Customers
-        User john = new User("John Smith");
+        // Users
+        User john = new User("John Smith", UserRole.USER, "john-smith@example.com", PASSWORD);
         john.persist();
 
-        User jane = new User("Jane Smith");
+        User jane = new User("Jane Smith", UserRole.USER, "jane-smith@example.com", PASSWORD);
         jane.persist();
+
+        User administrator = new User("Admin", UserRole.ADMIN, "admin@example.com", PASSWORD);
+        administrator.persist();
     }
 
 }

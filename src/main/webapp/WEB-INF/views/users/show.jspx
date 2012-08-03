@@ -5,5 +5,8 @@
     <page:show id="ps_za_co_trf_recurly_sample_domain_User" object="${user}" path="/users" z="PSsG0hs5vtkPGIDNmqQFMNmPw/8=">
         <field:display field="name" id="s_za_co_trf_recurly_sample_domain_User_name" object="${user}" z="1krlKeOXho6aET6ecVcG4qJHkZ8="/>
         <field:display field="accountCode" id="s_za_co_trf_recurly_sample_domain_User_accountCode" object="${user}" z="VkIPzJQjm/kel6EkQ5F/na+f3Ck="/>
+        <field:display field="role" id="s_za_co_trf_recurly_sample_domain_User_role" object="${user}" z="VV4vWkqulbi7m18O+89RnPkgM0E="/>
+        <field:display field="password" id="s_za_co_trf_recurly_sample_domain_User_password" object="${user}" z="KSrl4ZrEyttIgfZXEVKHrf3aU30="/>
+        <field:display field="email" id="s_za_co_trf_recurly_sample_domain_User_email" object="${user}" z="kAAfQXHX0wYg1edXid1Dw3yqEmg="/>
     </page:show>
 </div>

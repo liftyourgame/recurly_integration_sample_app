@@ -20,3 +20,10 @@ exit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-02 23:11:29
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-03 17:55:28
 security setup
+enum type --class ~.domain.UserRole
+// [failed] enum constant --name USER
+enum constant --name USER --permitReservedWords
+enum constant --name ADMIN --permitReservedWords
+focus --class ~.domain.User
+// [failed] field enum --fieldName role --type ~.domain.UserRole --notNull --enumType ORDINAL
+field enum --fieldName role --type ~.domain.UserRole --notNull --enumType ORDINAL --permitReservedWords

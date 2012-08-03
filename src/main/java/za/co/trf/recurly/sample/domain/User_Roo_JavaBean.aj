@@ -4,6 +4,7 @@
 package za.co.trf.recurly.sample.domain;
 
 import za.co.trf.recurly.sample.domain.User;
+import za.co.trf.recurly.sample.domain.UserRole;
 
 privileged aspect User_Roo_JavaBean {
     
@@ -15,12 +16,32 @@ privileged aspect User_Roo_JavaBean {
         this.name = name;
     }
     
+    public String User.getEmail() {
+        return this.email;
+    }
+    
+    public void User.setEmail(String email) {
+        this.email = email;
+    }
+    
+    public void User.setPassword(String password) {
+        this.password = password;
+    }
+    
     public String User.getAccountCode() {
         return this.accountCode;
     }
     
     public void User.setAccountCode(String accountCode) {
         this.accountCode = accountCode;
+    }
+    
+    public UserRole User.getRole() {
+        return this.role;
+    }
+    
+    public void User.setRole(UserRole role) {
+        this.role = role;
     }
     
 }

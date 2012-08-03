@@ -8,7 +8,6 @@ import za.co.trf.recurly.RecurlyConstants;
 import za.co.trf.recurly.js.RecurlyJS;
 
 import java.util.HashMap;
-import java.util.Map;
 
 @RequestMapping("/recurly/js/**")
 @Controller

@@ -5,6 +5,9 @@
     <form:create id="fc_za_co_trf_recurly_sample_domain_User" modelAttribute="user" path="/users" render="${empty dependencies}" z="OLfI+sj7P7Qn2DuWl2Rj+xo8G0o=">
         <field:input field="name" id="c_za_co_trf_recurly_sample_domain_User_name" required="true" z="mks3g0uXydGZkiOI1r7wXyE+J1M="/>
         <field:input field="accountCode" id="c_za_co_trf_recurly_sample_domain_User_accountCode" z="x/3eADcnxMj4laVQgnqlU20XULc="/>
+        <field:select field="role" id="c_za_co_trf_recurly_sample_domain_User_role" items="${userroles}" path="userroles" required="true" z="kzYIyVhSYDS9AtkVyaNLQ8ZIqCY="/>
+        <field:input field="password" id="c_za_co_trf_recurly_sample_domain_User_password" z="7yq/yqlRwiId8O8dcYtsViXHHT8="/>
+        <field:input field="email" id="c_za_co_trf_recurly_sample_domain_User_email" required="true" validationMessageCode="field_invalid_email" z="3z30YljfHbuq+q/XhZ/ffWfdths="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_za_co_trf_recurly_sample_domain_User" render="${not empty dependencies}" z="cI6B5J6mjgQ0u2cOH+1w9hgXl+M="/>
 </div>
