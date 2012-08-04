@@ -2,10 +2,6 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
 
-    <definition extends="default" name="recurly/js/index">
-        <put-attribute name="body" value="/WEB-INF/views/recurly/js/index.jspx"/>
-    </definition>
-
     <definition extends="default" name="recurly/js/subscribe-to-plan">
         <put-attribute name="body" value="/WEB-INF/views/recurly/js/subscribe-to-plan.jspx"/>
     </definition>

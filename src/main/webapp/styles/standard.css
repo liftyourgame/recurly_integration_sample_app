@@ -106,7 +106,7 @@ body {
     margin: 0;
 	padding: 0;
     left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-    border: 2px solid #666;
+    border: 2px solid #9C8AA5;
 }
 #menu ul li{
 	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
@@ -202,23 +202,24 @@ a.menu, a.menu:link, a.menu:visited {display:block; width:150px; height:25px;}
 
 h1,h2,h3 {
 	font-family: Helvetica, sans-serif;
-	color: #63117F;
 }
 
 h1 {
+    color: #63117F;
 	font-size: 20px;
 	line-height: 26px;
 }
 
 h2 {
-	font-size: 18px;
+    color:#9C8AA5;
+	font-size: 16px;
 	line-height: 20px;
 }
 
 h3 {
-	font-size: 15px;
+    color: #732C7B;
+	font-size: 12px;
 	line-height: 21px;
-	color:#555;
 }
 
 h4 {

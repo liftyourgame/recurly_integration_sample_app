@@ -5,13 +5,18 @@
     <jsp:output omit-xml-declaration="yes"/>
     <menu:menu id="menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
 
-        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
-            <menu:item id="i_controller__recurly_jsindex_id" messageCode="global_generic" url="/recurly/js/index"
-                       z="a5PbtL7FF5geC21E42ua+RE4PdU="/>
+        <menu:category id="c_recurly_js" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_recurly_js_subscribe" messageCode="global_generic" url="/recurly/js/subscribe-to-plan"/>
+            <menu:item id="i_recurly_js_update" messageCode="global_generic" url="/recurly/js/update-billing-info"/>
+            <menu:item id="i_recurly_js_transaction" messageCode="global_generic" url="/recurly/js/one-time-transaction"/>
+        </menu:category>
+
+
+        <menu:category id="c_recurly_api">
             <menu:item id="i_controller__recurly_accountsindex_id" messageCode="global_generic"
                        url="/recurly/accounts/index" z="r8REHgunVzNM4vtILWvNRrKU+YE="/>
         </menu:category>
-
+        
         <security:authorize access="hasRole('ADMIN')">
             <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
                 <menu:item id="i_user_new" messageCode="global_menu_new" url="/users?form" z="user-managed"/>

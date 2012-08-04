@@ -16,11 +16,6 @@ public class RecurlyJSController {
     @Autowired
     private RecurlyJS recurlyJS;
 
-    @RequestMapping
-    public String index() {
-        return "recurly/js/index";
-    }
-
     @RequestMapping("subscribe-to-plan")
     public String subscribeToPlan(Model model) {
         String signature = recurlyJS.sign(new HashMap<String, Object>() {{
@@ -48,7 +43,15 @@ public class RecurlyJSController {
     }
 
     @RequestMapping("one-time-transaction")
-    public String oneTimeTransaction() {
+    public String oneTimeTransaction(Model model) {
+        String signature = recurlyJS.sign(new HashMap<String, Object>() {{
+            put(RecurlyConstants.JS_PARAM_ACCOUNT, new HashMap<String, Object>() {
+                {
+                    put(RecurlyConstants.JS_PARAM_ACCOUNT_CODE, "123");
+                }
+            });
+        }});
+        model.addAttribute("signature", signature);
         return "recurly/js/one-time-transaction";
     }
 
