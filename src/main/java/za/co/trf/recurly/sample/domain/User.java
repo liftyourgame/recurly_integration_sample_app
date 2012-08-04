@@ -18,7 +18,6 @@ import java.util.Collection;
 import java.util.Collections;
 
 @RooJavaBean
-@RooToString
 @RooJpaActiveRecord(table = "user")
 public class User implements UserDetails, CredentialsContainer {
 
@@ -99,6 +98,11 @@ public class User implements UserDetails, CredentialsContainer {
     @Override
     public int hashCode() {
         return this.getUsername().hashCode() * 31;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
 }

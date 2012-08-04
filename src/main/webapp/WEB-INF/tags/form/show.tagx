@@ -38,7 +38,8 @@
     <spring:message var="typeNamePlural" code="menu_item_${fn:toLowerCase(fn:split(id,'_')[fn:length(fn:split(id,'_')) - 1])}_list_label" htmlEscape="false" />
 
     <spring:message arguments="${label}" code="entity_show" var="title_msg" htmlEscape="false" />
-    <util:panel id="${id}" title="${title_msg}" openPane="${openPane}">
+    <div id="${id}">
+      <h1>${object}</h1>
       <c:choose>
         <c:when test="${not empty object}">
           <jsp:doBody />
@@ -98,6 +99,6 @@
           <spring:message arguments="${label}" code="entity_not_found_single" />
         </c:otherwise>
       </c:choose>
-    </util:panel>
+    </div>
   </c:if>
 </jsp:root>

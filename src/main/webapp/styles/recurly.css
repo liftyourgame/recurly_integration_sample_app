@@ -289,7 +289,7 @@
   vertical-align: middle;
 }
 .recurly .error {
-  padding: 5px;
+  padding: 0px 5px;
   line-height: 22px;
   vertical-align: middle;
   color: #000;
