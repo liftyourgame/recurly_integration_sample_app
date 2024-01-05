@@ -1,7 +1,8 @@
 repo_name: liftyourgame/recurly_integration_sample_app
 report_id: c8102a29052d7e3c8ad1dbdcade84e67
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T16:27:24+00:00'
+timestamp: '2024-01-05T08:24:14+00:00'
 requested_by: liftyourgame
 provider: github
 branch: master
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app
   detection_source: Repo Metadata
 - name: Java
   description: A concurrent, class-based, object-oriented, language specifically designed
@@ -39,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app
   detection_source: Repo Metadata
 - name: Spring Framework
   description: An application framework and inversion of control container for the
@@ -63,6 +66,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/6958/yQ4763oZ_400x400.jpg
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-07-31 20:14:05.000000000 Z
@@ -74,6 +78,7 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/1756/1uNl_IZX.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-07-31 20:14:05.000000000 Z
@@ -85,6 +90,7 @@ tools:
   category: Data Stores
   sub_category: Database Tools
   image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/MIT-license.txt
   detection_source: MIT-license.txt
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-02 19:26:52.000000000 Z
@@ -96,6 +102,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app
   detection_source: Repo Metadata
 - name: GlassFish
   description: The Open Source Java EE Reference Implementation
@@ -105,6 +112,7 @@ tools:
   category: Application Hosting
   sub_category: Web Servers
   image_url: https://img.stackshare.io/service/3628/515GX-Cc_400x400.jpg
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-07-31 20:14:05.000000000 Z
@@ -144,6 +152,7 @@ tools:
   category: Monitoring
   sub_category: Log Management
   image_url: https://img.stackshare.io/service/2805/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-07-31 20:14:05.000000000 Z
@@ -156,6 +165,7 @@ tools:
   category: Application Hosting
   sub_category: Platform as a Service
   image_url: https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/src/main/webapp/WEB-INF/i18n/application.properties
   detection_source: src/main/webapp/WEB-INF/i18n/application.properties
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-01 21:34:18.000000000 Z
@@ -165,6 +175,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/2973/2ugK6PfJ_normal.jpg
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app
   detection_source: Repo Metadata
 - name: LangChain
   description: Build AI apps with LLMs through composability
@@ -174,6 +185,7 @@ tools:
   category: Communications
   sub_category: Large Language Model Tools
   image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/MIT-license.txt
   detection_source: MIT-license.txt
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-02 19:26:52.000000000 Z
@@ -349,6 +361,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-03 16:15:33.000000000 Z
@@ -482,6 +495,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-04 20:27:16.000000000 Z
@@ -493,6 +507,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-04 20:27:16.000000000 Z
@@ -517,6 +532,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-04 20:27:16.000000000 Z
@@ -528,6 +544,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-04 20:27:16.000000000 Z
@@ -539,6 +556,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/liftyourgame/recurly_integration_sample_app/blob/master/pom.xml
   detection_source: pom.xml
   last_updated_by: Terence Foxcroft
   last_updated_on: 2012-08-04 20:27:16.000000000 Z
