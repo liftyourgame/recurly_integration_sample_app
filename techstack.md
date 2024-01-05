@@ -46,7 +46,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [liftyourgame/recurly_integration_sample_app](https://github.com/liftyourgame/recurly_integration_sample_app)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|57<br/>Tools used|12/14/23 <br/>Report generated|
+|57<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
