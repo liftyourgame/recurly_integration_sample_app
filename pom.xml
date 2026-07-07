@@ -12,8 +12,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <roo.version>1.2.2.RELEASE</roo.version>
         <slf4j.version>1.6.4</slf4j.version>
-        <spring.version>6.2.10</spring.version>
-        <spring-security.version>6.4.9</spring-security.version>
+        <spring.version>6.2.11</spring.version>
+        <spring-security.version>6.4.11</spring-security.version>
     </properties>
     <repositories>
         <repository>
@@ -101,7 +101,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.1</version>
+            <version>3.18.0</version>
         </dependency>
         <!-- ROO dependencies -->
         <dependency>
